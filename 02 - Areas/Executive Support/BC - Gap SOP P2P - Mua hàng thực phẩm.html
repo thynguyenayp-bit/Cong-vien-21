@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<style>
+@page {
+  size: A4;
+  margin: 2cm 2.5cm;
+}
+@media print {
+  body { margin: 0; }
+}
+@page {
+  size: A4;
+  margin: 2cm 2.5cm;
+  @bottom-center {
+    content: "Trang " counter(page) " / " counter(pages);
+    font-size: 9pt;
+    color: #888;
+  }
+}
+
+body {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-size: 16pt;
+  color: #1a365d;
+  border-bottom: 2px solid #1a365d;
+  padding-bottom: 6pt;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 13pt;
+  color: #2d3748;
+  margin-top: 18pt;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 4pt;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12pt 0;
+  font-size: 10pt;
+}
+
+th {
+  background-color: #edf2f7;
+  color: #2d3748;
+  font-weight: bold;
+  text-align: left;
+  padding: 6pt 8pt;
+  border: 1px solid #cbd5e0;
+}
+
+td {
+  padding: 5pt 8pt;
+  border: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+tr:nth-child(even) td {
+  background-color: #f7fafc;
+}
+
+blockquote {
+  border-left: 3px solid #e53e3e;
+  background: #fff5f5;
+  margin: 12pt 0;
+  padding: 8pt 12pt;
+  font-size: 10pt;
+  color: #742a2a;
+}
+
+blockquote strong {
+  color: #c53030;
+}
+
+code {
+  background: #edf2f7;
+  padding: 1pt 4pt;
+  border-radius: 2pt;
+  font-size: 10pt;
+}
+
+ul, ol {
+  margin: 6pt 0;
+  padding-left: 20pt;
+}
+
+li {
+  margin-bottom: 3pt;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 16pt 0;
+}
+
+</style>
+</head>
+<body>
+<hr />
+<p>tags: [issue-report, sop, procurement]
+date: 2026-08-19
+status: open
+type: issue-report
+impact: Cao — ảnh hưởng khả năng cung ứng hàng thực phẩm hàng ngày cho 5 profit centers</p>
+<hr />
+<h1>BC — Gap SOP P2P: Quy trình mua hàng thực phẩm không khả thi cho next-day delivery</h1>
+<blockquote>
+<p>Báo cáo ngày 2026-08-19 — [[Dashboard]] · [[Home]] · [[Đặng Thế Tài]]</p>
+</blockquote>
+<h2>Vấn đề</h2>
+<p>SOP P2P Master Process ([[NQH-HO-CGF-MP-001]] v1.1, hiệu lực 01/01/2026) thiết kế SLA cho mua hàng tổng quát (vật tư, dịch vụ, CapEx) với tổng thời gian <strong>1–4 ngày</strong>. Tuy nhiên, quy trình này đang được áp dụng cho <strong>hàng thực phẩm tươi sống</strong> — loại cần giao trong <strong>≤ 8 tiếng</strong> (tạo PR trước 5h chiều → hàng về sáng hôm sau).</p>
+<p>Khoảng cách: SOP cần tối thiểu <strong>16h+</strong> (theo SLA thấp nhất), thực tế yêu cầu <strong>≤ 8h</strong>. Không có fast-track lane riêng cho perishable goods.</p>
+<h2>Case minh hoạ (18/08/2026)</h2>
+<table>
+<thead>
+<tr>
+<th>Thời điểm</th>
+<th>Sự kiện</th>
+<th>Khoảng cách</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16:25</td>
+<td>Bếp tạo PR</td>
+<td>—</td>
+</tr>
+<tr>
+<td>18:16</td>
+<td>PR duyệt xong (bước cuối)</td>
+<td>+1h51p ✅ đúng SLA</td>
+</tr>
+<tr>
+<td>19:20</td>
+<td>Chị Hồng tạo PO</td>
+<td>+1h04p ✅ nhanh hơn SOP</td>
+</tr>
+<tr>
+<td>23:00</td>
+<td>KTT duyệt PO</td>
+<td><strong>+3h40p</strong> ⚠️ không có SLA</td>
+</tr>
+<tr>
+<td>23:00+</td>
+<td>Chị Hồng liên hệ NCC đặt hàng</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tổng: 6h35p.</strong> Các bước có SLA chạy đúng hoặc nhanh hơn SOP. Bước KTT duyệt PO chiếm hơn 1/2 tổng thời gian nhưng <strong>không có SLA</strong> trong SOP → không có gì để breach → không auto-escalate. Phải có người can thiệp thủ công (gọi điện) mới xử lý được.</p>
+<h2>Nguyên nhân gốc</h2>
+<ol>
+<li><strong>SOP "mù" với bước KTT duyệt PO</strong> — không ghi SLA cho bước quyết định cuối cùng trước khi đặt hàng NCC. Tạo "black hole" không ai kiểm soát.</li>
+<li><strong>Chuỗi duyệt PR phân tầng cộng dồn</strong> — GM → OM → CEO theo hạn mức, SLA 4h–72h. Quá chậm cho hàng tươi sống cần đặt trong đêm giao ngay sáng hôm sau.</li>
+<li><strong>Escalation thủ công, không phải system control</strong> — chỉ hoạt động khi có người tự phát hiện và gọi điện. Ngày mai không có người đó → cùng kịch bản trễ hàng.</li>
+</ol>
+<h2>Kiến nghị điều chỉnh</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Điều chỉnh</th>
+<th>Mức ưu tiên</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Standing Approval / Blanket PO cho thực phẩm:</strong> GM duyệt kế hoạch mua thực phẩm đầu tuần (danh mục + số lượng ước tính + NCC pre-approved + giá thoả thuận). Bếp order hàng ngày theo kế hoạch → không cần duyệt PR lại. Order vượt định mức hoặc ngoài kế hoạch → chạy quy trình duyệt bình thường.</td>
+<td>🔺 Cao</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Thêm SLA cho bước KTT duyệt PO:</strong> tối đa <strong>1h</strong> cho thực phẩm, quá 1h → auto-escalate CEO</td>
+<td>🔺 Cao</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Auto-notification cho KTT</strong> khi PO tạo + reminder mỗi 30 phút nếu chưa duyệt</td>
+<td>⏫ Trung bình</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Lưu ý:</strong> Không áp dụng cơ chế "đặt trước duyệt sau" vì rủi ro tạo tiền lệ xấu (chi trước duyệt sau, khó kiểm soát gian lận). Kiểm soát nên tập trung ở <strong>kế hoạch tuần</strong> (duyệt 1 lần, giá trị lớn) thay vì <strong>từng đơn nhỏ</strong> (duyệt nhiều lần, giá trị nhỏ).</p>
+</blockquote>
+<h2>Liên kết</h2>
+<ul>
+<li>SOP tham chiếu: [[NQH-HO-CGF-MP-001_Purchase_to_Pay_Master_Process]]</li>
+<li>Người liên quan: [[Đặng Thế Tài]] · chị Hồng (mua hàng) · chị Vân (KTT)</li>
+<li>Báo cáo BGĐ: [[Báo cáo BGĐ]]</li>
+</ul>
+</body>
+</html>
