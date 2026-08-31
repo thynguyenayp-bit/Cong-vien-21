@@ -132,13 +132,42 @@ Có sự chênh lệch giữa GM/trưởng ca và nhân viên văn phòng. Một
 
 ---
 
+## 📊 Kết quả khảo sát hành vi 7 ngày (N=12, làm ngày 25/08)
+
+> Dữ liệu hành vi thực tế — thay thế số liệu cảm nhận cuối buổi (96%, 4.72/5) làm bằng chứng cho bảng §② theo yêu cầu CEO.
+
+### Mức độ tham gia
+- **12/25 học viên phản hồi (48%)** — cần nhắc 13 người còn lại trước 03/09
+
+### Công cụ/kiến thức được áp dụng
+| Nội dung | Số người áp dụng |
+|---|---|
+| Hai bẫy quản lý | 7 |
+| Tảng băng 4 tầng | 5 |
+| Hiệu ứng Bullwhip | 4 |
+
+### Case nổi bật (3 bước đúng: lặp lại → đổi người → việc gì làm đúng khó)
+- **Lê Thị Phương Uyên** (trưởng ca BKL): phân tích thời gian chờ món giờ cao điểm — "tập trung tìm nguyên nhân gốc thay vì chỉ xử lý khi khách phàn nàn"
+- **Nguyễn Lê Mỹ Tuyên**: dừng đơn pizza — đổi người vẫn xảy ra → chuẩn bị NVL trước, đã xử lý xong
+- **Trần Lâm Duy**: "Không làm thay việc cho nhân viên" → Training - Kiên nhẫn - Chấp nhận sai - Không cầu toàn
+
+### Pattern khó khăn báo cáo (→ đầu vào case cho module 03+04)
+- Thiếu chỉ số đầu cuối (booking/lượng khách/chi tiêu) chưa thu thập đầy đủ
+- Văn hóa làm việc cũ của nhân sự tại cơ sở
+- Giờ cao điểm dễ rơi vào "chữa cháy"
+- Nhân viên không dám nhận trách nhiệm
+
+→ Các khó khăn này đều là **mẫu hình cấu trúc** — học viên đã chạm giới hạn công cụ tầng 1, cần đúng module 03+04 (Archetypes + Learning Disabilities).
+
+---
+
 ## 📅 Đề xuất lộ trình đào tạo đến hết 2026
 
 ### Bản 1: Cách nhau 4 tuần (ĐÃ ĐIỀU CHỈNH — tôn trọng thứ tự 00→14)
 
 | Tuần | Ngày | Phần | Đối tượng | Ghi chú |
 |------|------|------|-----------|---------|
-| 35 | 29/08 | 01 Iceberg + 02 Feedback Loops | Tất cả (lặp lại cho người vắng) | **Tầng 1: NHÌN** — Foundation |
+| 35 | ~~29/08~~ | 01 Iceberg + 02 Feedback Loops | Tất cả (lặp lại cho người vắng) | **CHƯA CHẠY** → lồng ôn tập 30 phút vào đầu buổi pilot 05/09 |
 | **36** | **05/09** | **03 Archetypes + 04 Learning Disabilities** | **Lãnh đạo + Quản lý** | **Tầng 2: TRÁNH** — PILOT |
 | 40 | 03/10 | 05 Stocks & Flows + 06 Laws | Lãnh đạo + Quản lý | **Tầng 3: HIỂU** — Core cấu trúc |
 | 44 | 31/10 | 07 Leverage Points | BOD/Director | **Tầng 4: HÀNH ĐỘNG** — 1-1 coaching |
@@ -146,7 +175,11 @@ Có sự chênh lệch giữa GM/trưởng ca và nhân viên văn phòng. Một
 | 47 | 21/11 | 10 Games + 11 Case NQH/MTS | Tất cả | **Tầng 5: THỰC HÀNH** — Workshop |
 | 49 | 05/12 | 12 Triển khai + 13 CLD | Đội đào tạo + Chuyên gia | **Tầng 5: THỰC HÀNH** — TTT + CLD |
 
-**Tổng:** 7 buổi (bao gồm pilot) × 2 module/buổi = phủ 13/14 phần (00 Overview đã học trong buổi 12/08)
+**Tổng:** 7 buổi (bao gồm pilot) × 2 module/buổi = phủ 13/14 phần (00 Overview đã học trong buổi 12/08). **Module 14 (ST Trong Kỷ Nguyên AI)** được ghép vào buổi 07/11 (cùng 08+09).
+
+**Ranh giới chung/tách lớp:** Tầng 1–3 (01–06): chung lớp, pace theo người chậm nhất. Từ tầng 4 (07 trở lên): tách theo vai.
+
+**Quyết định pace (tạm thời):** "Giữ chung lớp, chậm phần kỹ thuật" dựa trên phản hồi của một trưởng ca — ghi nhận là **tạm thời**. Tiêu chí xác nhận/điều chỉnh: **≥2 phản hồi từ ca độc lập** sau pilot 05/09.
 
 **Logic sư phạm:**
 - **Buổi 1 (29/08): 01+02** — Nâng cấp "đôi mắt" để NHÌN cấu trúc ngầm và vòng lặp
@@ -198,14 +231,16 @@ Có sự chênh lệch giữa GM/trưởng ca và nhân viên văn phòng. Một
 
 ---
 
-## 📝 Action Items
+## 📝 Action Items (cập nhật 31/08 theo phản hồi CEO)
 
-- [x] Gửi báo cáo này cho anh Tài duyệt - 📅 2026-08-14 🔼
-- [ ] Khảo sát sau 7 ngày (bảo mật) - 📅 2026-08-19 🔼
-- [ ] Họp với Phạm Ngọc Hân (HCNS) về tích hợp đào tạo nhân viên mới - 📅 2026-08-20 🔼
-- [ ] Họp với MKT về lưu tài liệu online - 📅 2026-08-21 🔼
-- [ ] Điều chỉnh pace phần kỹ thuật (Iceberg, Bullwhip) cho buổi pilot - 📅 2026-09-01 🔼
-- [ ] Tổ chức pilot buổi 03+04 (05/09) — gửi invite, chuẩn bị case NQH - 📅 2026-08-25 🔼
-- [ ] Sau pilot: đánh giá và chốt lịch chính thức cả năm - 📅 2026-09-08 🔼
-- [ ] Chọn trợ giảng từ team Vận hành (ưu tiên anh Đỗ Tiến Sĩ hoặc anh Trần Nguyên Bảo) - 📅 2026-09-15 🔼
-- [ ] Chuẩn bị nội dung buổi 05+06 (03/10) — Stocks & Flows + Laws - 📅 2026-09-20 🔼
+- [x] Gửi báo cáo cho anh Tài duyệt - 📅 2026-08-14
+- [x] Khảo sát hành vi 7 ngày (N=12, làm ngày 25/08) — thay thế số liệu cảm nhận cuối buổi
+- [x] Họp MKT — đã tổ chức lưu file, đang phân loại video theo nội dung
+- [x] Xác minh buổi 29/08: **chưa chạy** → lồng phần ôn tập 01+02 (30 phút) vào đầu buổi pilot 05/09, mời lại người vắng 12/08
+- [ ] **Chờ CEO xác nhận lịch pilot 05/09** → gửi invite ngay sau khi được xác nhận 🔼
+- [ ] Nhắc 13 học viên chưa trả lời khảo sát (trước 03/09) 🔼
+- [ ] Chọn trợ giảng dự buổi pilot với vai quan sát (hạn 02/09, CEO chốt) — đề xuất: anh Đỗ Tiến Sĩ hoặc anh Trần Nguyên Bảo
+- [ ] Tổng hợp báo cáo khảo sát 7 ngày, điền bảng §② (hạn 05/09)
+- [ ] Họp HCNS về tích hợp đào tạo NV mới — **sau khi chốt lộ trình** (điều chỉnh từ 20/08)
+- [ ] Ghép module 14 (ST Trong Kỷ Nguyên AI) vào buổi 07/11 (cùng 08+09)
+- [ ] Sau pilot: đánh giá + chốt lịch cả năm cùng CEO (hạn 08/09)
