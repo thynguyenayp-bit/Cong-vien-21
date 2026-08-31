@@ -1,0 +1,20 @@
+{
+  "env": {
+    "NQH_AI_KEY": "sk-dfFyH5PU6XBGgf7gro0NVQ
+Y"
+  },
+  "modelProviders": {
+    "openai": [
+      { "id": "auto",   "name": "[NQH] Auto",   "baseUrl": "https://litellm.nhatquangholding.com/v1", "envKey": "NQH_AI_KEY" },
+      { "id": "claude", "name": "[NQH] Claude", "baseUrl": "https://litellm.nhatquangholding.com/v1", "envKey": "NQH_AI_KEY" },
+      { "id": "qwen",   "name": "[NQH] Qwen",   "baseUrl": "https://litellm.nhatquangholding.com/v1", "envKey": "NQH_AI_KEY" },
+      { "id": "kimi",   "name": "[NQH] Kimi",   "baseUrl": "https://litellm.nhatquangholding.com/v1", "envKey": "NQH_AI_KEY" },
+      { "id": "local",  "name": "[NQH] Local",  "baseUrl": "https://litellm.nhatquangholding.com/v1", "envKey": "NQH_AI_KEY" }
+    ]
+  },
+  "model": {
+    "name": "auto",
+    "baseUrl": "https://litellm.nhatquangholding.com/v1"
+  },
+  "security": { "auth": { "selectedType": "openai" } }
+}

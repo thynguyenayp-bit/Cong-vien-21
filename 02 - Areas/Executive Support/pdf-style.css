@@ -1,0 +1,93 @@
+@page {
+  size: A4;
+  margin: 2cm 2.5cm;
+  @bottom-center {
+    content: "Trang " counter(page) " / " counter(pages);
+    font-size: 9pt;
+    color: #888;
+  }
+}
+
+body {
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-size: 16pt;
+  color: #1a365d;
+  border-bottom: 2px solid #1a365d;
+  padding-bottom: 6pt;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 13pt;
+  color: #2d3748;
+  margin-top: 18pt;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 4pt;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12pt 0;
+  font-size: 10pt;
+}
+
+th {
+  background-color: #edf2f7;
+  color: #2d3748;
+  font-weight: bold;
+  text-align: left;
+  padding: 6pt 8pt;
+  border: 1px solid #cbd5e0;
+}
+
+td {
+  padding: 5pt 8pt;
+  border: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+tr:nth-child(even) td {
+  background-color: #f7fafc;
+}
+
+blockquote {
+  border-left: 3px solid #e53e3e;
+  background: #fff5f5;
+  margin: 12pt 0;
+  padding: 8pt 12pt;
+  font-size: 10pt;
+  color: #742a2a;
+}
+
+blockquote strong {
+  color: #c53030;
+}
+
+code {
+  background: #edf2f7;
+  padding: 1pt 4pt;
+  border-radius: 2pt;
+  font-size: 10pt;
+}
+
+ul, ol {
+  margin: 6pt 0;
+  padding-left: 20pt;
+}
+
+li {
+  margin-bottom: 3pt;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 16pt 0;
+}
